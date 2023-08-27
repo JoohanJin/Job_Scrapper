@@ -1,5 +1,5 @@
 from extractor.wwr import extract_jobs as wwrEx
-from extractor.linkedin import job_extract as lkEx
+from extractor.linkedin import page_scoll_job_extract as lkEx
 from extractor.indeed import job_extract as indeedEx
 
 keyword = input("What do you want to search for?: ")
