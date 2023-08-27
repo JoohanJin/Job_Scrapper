@@ -10,8 +10,8 @@ indeed_jobs = indeedEx(keyword)
 jobs = wwr_jobs + lkd_jobs + indeed_jobs
 
 file = open(f"{keyword}.csv", "w")
-file.write("Position, Company, Location, Job Type, URL\n")
+file.write("Position,Company,Location,Job_Type,URL\n")
 for job in jobs:
-    file.write(f"{job['job_title']}, {job['company']}, {job['location']}, {job['work_type']}, {job['link']}\n")
+    file.write(f"\"{job['job_title']}\",\"{job['company']}\",\"{job['location']}\",\"{job['work_type']}\",\"{job['link']}\"\n")
 
 file.close()
